@@ -1,2 +1,3 @@
 User-agent: *
-Disallow: /
+Allow: /
+# Les maquettes portent chacune une balise noindex.
