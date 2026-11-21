@@ -1,2 +1,0 @@
-À REVOIR 21/11 17 h 50 : 4 vraies photos seulement (photos d'avis 403), pas de façade nette ; viandes partiellement illisibles (reflet). Maquette 8/10 faite, contrôles OK. Reprendre si Jul accepte ou si photos FB/Instagram (après 18 h).
-E-mail brasseriedujard@hotmail.com (tourisme-en-champagne.com) ; tél 03 26 65 61 83 ; 4,3/595 ; slug annuaire la-brasserie-du-jard-6278106 ; mk.py dans le conteneur perdu.
