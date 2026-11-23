@@ -1,0 +1,4 @@
+# SARL AR PEINTURE – Arnaud Roy (Moncrabeau 47600, secteur Condom) — 23/11 agent v7
+Vérifié : fiche Google 5,0 / 25 avis, aucun site, zone de service (pas d'adresse affichée), tél 06 88 48 39 57, ouvert lun-ven 9 h-18 h (Lydeo, d'après fiche Google), avis il y a 2 mois (visite sept.), réponses du propriétaire il y a 1 mois.
+Prestations (description reprise par pro.lydeo.com/fr/pro/3959) : peinture intérieure et extérieure, neuf ou rénovation, embellissement de façade, vernissage du bois, conseil couleurs/motifs/matières. BP, 18 ans de métier, AR Peinture depuis 2021 (côte landaise à l'origine). Société actuelle SIREN 101393403 (créée 2026, Moncrabeau).
+BLOQUANT : aucun e-mail ni page FB/Instagram pro trouvée → APPEL. Photos fiche non comptées (onglets Intérieur/Cuisine/propriétaire présents). Anti-doublon nouvelle boîte : libre ; ancienne boîte non faite.
