@@ -14,7 +14,20 @@ def apply(t,c):
 .jlc{margin:34px auto 0;max-width:640px;border:1px solid var(--jb,rgba(255,255,255,.25));border-radius:16px;padding:22px 20px;text-align:center}.jlc h4{font:600 26px var(--fT,inherit);color:var(--jt,#fff)}.jlc p{color:var(--jp,#cfcfcf);font-size:15px;margin-top:4px}
 .jlc .lk{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:14px}.jlc .lk a{display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:99px;text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--jb,rgba(255,255,255,.4));color:var(--jt,#fff)}.jlc .lk a.p{background:var(--c2);color:var(--c2t,#fff);border-color:var(--c2)}.jlc .lk svg{width:16px;height:16px}'''
     t=t.replace('</head>','<style>'+css+'</style></head>',1)
-    modal=f'''<div class="rz" id="resa" role="dialog" aria-label="Réserver une table"><form novalidate>
+    if c.get('mode')=='devis':
+        # Commerces hors restaurant (v7, 23/11) : c=dict(..., mode='devis', devis_titre='Demander un devis', devis_qui="l'entreprise")
+        ti=c.get('devis_titre','Demander un devis'); qui=c.get('devis_qui',"l'entreprise")
+        modal=f'''<div class="rz" id="resa" role="dialog" aria-label="{ti}"><form novalidate>
+<div class="f"><h4>{ti}</h4>
+<p class="dm">Démo — le formulaire sera actif sur votre vrai site.</p>
+<label>Nom<input type="text" autocomplete="name"></label><label>Téléphone<input type="tel" autocomplete="tel"></label>
+<label>Votre besoin<input type="text"></label>
+<button type="submit">Envoyer la demande</button>
+<p style="text-align:center;font-size:14px">ou par téléphone&nbsp;: <a href="tel:{telh}">{tel}</a></p></div>
+<div class="ok"><h4>Demande enregistrée (démo)</h4><p>Sur le vrai site, {qui} reçoit la demande et vous rappelle. Rien n'a été envoyé.</p></div>
+<button type="button" class="x">Fermer</button></form></div>'''
+    else:
+      modal=f'''<div class="rz" id="resa" role="dialog" aria-label="Réserver une table"><form novalidate>
 <div class="f"><h4>Réserver une table</h4>
 <p class="dm">Démo — la réservation en ligne sera active sur votre vrai site.</p>
 <div class="two"><label>Date<input type="date"></label><label>Heure<input type="time" value="12:30"></label></div>
