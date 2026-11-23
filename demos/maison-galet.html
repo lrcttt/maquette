@@ -1,0 +1,155 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maison Galet · Restaurant de bord de mer — exemple fictif</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@400;500;600&display=swap">
+<style>
+:root{--navy:#0e1b26;--navy2:#13273a;--sand:#efe6d3;--sand2:#e2d4b8;--copper:#c9814f;--fg:#efe6d3;--mut:#a7b3bd;--serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--navy);color:var(--fg);font:400 16px/1.6 var(--sans)}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;line-height:1.05}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+.ph{position:relative;background:linear-gradient(160deg,#1c3448,#0b1620);overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.ph::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(201,129,79,.25),transparent 50%)}
+nav{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:rgba(14,27,38,.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(239,230,211,.1)}
+nav b{font:500 1.35rem var(--serif);letter-spacing:.04em}
+nav b i{font-style:normal;color:var(--copper)}
+nav .links{display:none;gap:26px;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase}
+nav .links a{text-decoration:none;color:var(--mut)}
+nav .call{font:500 .82rem var(--sans);text-decoration:none;border:1px solid var(--copper);color:var(--sand);padding:.6em 1.1em;border-radius:999px;letter-spacing:.06em;text-transform:uppercase}
+@media(min-width:900px){nav .links{display:flex}}
+.hero{position:relative;min-height:88vh;display:grid;align-items:end}
+.hero .ph{position:absolute;inset:0}
+.hero .ph::after{background:linear-gradient(180deg,rgba(14,27,38,.2),rgba(14,27,38,.95))}
+.hero .wrap{position:relative;padding-bottom:50px;padding-top:120px}
+.hero small{display:block;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--copper);margin-bottom:14px}
+.hero h1{font-size:clamp(3rem,8vw,6rem);font-weight:400}
+.hero h1 em{font-style:italic;color:var(--sand2)}
+.hero p{max-width:50ch;color:var(--mut);margin-top:16px;font-size:1.05rem}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.b{font:500 .88rem var(--sans);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:1em 1.6em;border-radius:999px;border:1px solid var(--sand);color:var(--sand)}
+.b.f{background:var(--copper);border-color:var(--copper);color:#1a1008}
+.b.w{background:var(--sand);border-color:var(--sand);color:#0e1b26}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-size:.84rem;color:var(--mut)}
+.status i{width:8px;height:8px;border-radius:50%;background:#58b37a;box-shadow:0 0 0 4px rgba(88,179,122,.2)}
+.sec{padding:80px 0}
+.k{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--copper)}
+.h2{font-size:clamp(2.2rem,5vw,3.6rem);margin-top:10px;font-weight:400}
+.today{display:grid;grid-template-columns:1fr;gap:22px;align-items:center;background:var(--navy2);border:1px solid rgba(239,230,211,.12);border-radius:22px;overflow:hidden}
+.today .ph{min-height:260px}
+.today .t{padding:28px}
+.today .t small{color:var(--copper);letter-spacing:.2em;text-transform:uppercase;font-size:.76rem}
+.today .t h3{font-size:clamp(1.8rem,4vw,2.6rem);margin-top:8px;font-style:italic;font-weight:400;transition:color .3s}
+.today .t p{color:var(--mut);margin-top:10px}
+.today .price{font:500 1.6rem var(--serif);color:var(--sand);margin-top:14px}
+@media(min-width:800px){.today{grid-template-columns:1fr 1fr}.today .ph{min-height:360px}}
+.menu{display:grid;gap:40px;margin-top:40px}
+@media(min-width:800px){.menu{grid-template-columns:1fr 1fr}}
+.menu h3{font-size:1.7rem;font-style:italic;color:var(--sand2);padding-bottom:12px;border-bottom:1px solid rgba(239,230,211,.15);margin-bottom:12px}
+.menu div.l{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px dashed rgba(239,230,211,.14)}
+.menu .l b{font:500 1.1rem var(--serif)}
+.menu .l span{display:block;color:var(--mut);font-size:.9rem}
+.menu .l em{font-style:normal;color:var(--copper);font:500 1.05rem var(--serif);white-space:nowrap}
+.strip{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+@media(min-width:700px){.strip{grid-template-columns:repeat(4,1fr)}}
+.strip .ph{aspect-ratio:1;border-radius:14px}
+.info{display:grid;gap:24px}
+@media(min-width:800px){.info{grid-template-columns:1fr 1fr 1fr}}
+.info div{padding:26px;border:1px solid rgba(239,230,211,.12);border-radius:18px;background:var(--navy2)}
+.info h3{font-size:1.4rem;margin-bottom:10px;color:var(--sand2)}
+.info p{color:var(--mut);font-size:.95rem}
+.info table{width:100%;border-collapse:collapse;font-size:.95rem}
+.info td{padding:5px 0;color:var(--mut)}.info td:last-child{text-align:right;color:var(--fg)}
+.res{background:var(--sand);color:var(--navy);border-radius:26px;padding:44px 28px;text-align:center}
+.res h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:400}
+.res p{color:#5a6670;margin-top:10px}
+.res form{display:grid;gap:10px;max-width:640px;margin:26px auto 0;grid-template-columns:1fr 1fr}
+.res input,.res select,.res button{font:500 .95rem var(--sans);padding:.9em 1em;border-radius:12px;border:1px solid #cdbf9f;background:#fff;color:var(--navy)}
+.res button{grid-column:1/-1;background:var(--navy);color:var(--sand);border-color:var(--navy);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+footer{padding:40px 20px 30px;text-align:center;color:var(--mut);font-size:.85rem;border-top:1px solid rgba(239,230,211,.1)}
+footer .soc{display:flex;justify-content:center;gap:14px;margin-bottom:16px}
+footer .soc a{width:42px;height:42px;border:1px solid rgba(239,230,211,.2);border-radius:50%;display:grid;place-items:center;color:var(--sand)}
+footer .soc svg{width:18px;height:18px}
+.fict{margin-top:14px;opacity:.6;font-size:.75rem}
+</style><script>if(self!==top)document.documentElement.classList.add("emb")</script><style>.emb *,.emb *::before,.emb *::after{animation:none!important;transition:none!important}.emb{scroll-behavior:auto!important}</style></head><body>
+<nav><b>Maison <i>Galet</i></b><div class="links"><a href="#carte">La carte</a><a href="#infos">Horaires</a><a href="#reserver">Réserver</a></div><a class="call" href="tel:+33200000000">Appeler</a></nav>
+
+<header class="hero">
+  <div class="ph"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=70" alt="" onerror="this.remove()"></div>
+  <div class="wrap">
+    <small>Restaurant · Cherbourg, face au port</small>
+    <h1>La mer,<br><em>dans l’assiette.</em></h1>
+    <p>Poissons de la criée du matin, légumes du Cotentin et une carte courte qui change avec la marée. Trente couverts, une terrasse sur le quai.</p>
+    <div class="btns"><a class="b w" href="#carte">Voir la carte</a><a class="b f" href="#reserver">Réserver une table</a></div>
+    <div class="status"><i></i> Ouvert ce soir · service de 19 h à 22 h</div>
+  </div>
+</header>
+
+<section class="sec"><div class="wrap">
+  <div class="today">
+    <div class="ph"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200&q=70" alt="" onerror="this.remove()"></div>
+    <div class="t"><small>Le plat du jour</small><h3 id="dish">Lieu jaune, beurre blanc</h3><p>Pêché cette nuit, servi ce midi. Modifié chaque matin par le chef depuis son téléphone.</p><div class="price"><span id="price">24</span> €</div></div>
+  </div>
+</div></section>
+
+<section class="sec" id="carte" style="padding-top:0"><div class="wrap">
+  <div class="k">La carte</div><h2 class="h2">Courte, de saison, <em style="font-style:italic;color:var(--sand2)">honnête.</em></h2>
+  <div class="menu">
+    <div><h3>Entrées</h3>
+      <div class="l"><div><b>Huîtres de Saint-Vaast</b><span>6 pièces, vinaigre d’échalote</span></div><em>14 €</em></div>
+      <div class="l"><div><b>Tartare de dorade</b><span>agrumes, huile de coriandre</span></div><em>13 €</em></div>
+      <div class="l"><div><b>Velouté de potimarron</b><span>noisettes torréfiées</span></div><em>9 €</em></div>
+    </div>
+    <div><h3>Plats</h3>
+      <div class="l"><div><b>Sole meunière</b><span>pommes de terre de Créances</span></div><em>32 €</em></div>
+      <div class="l"><div><b>Risotto aux coques</b><span>beurre demi-sel, persil plat</span></div><em>21 €</em></div>
+      <div class="l"><div><b>Pièce de bœuf normand</b><span>jus corsé, légumes rôtis</span></div><em>27 €</em></div>
+    </div>
+    <div><h3>Desserts</h3>
+      <div class="l"><div><b>Teurgoule tiède</b><span>la vraie, cuite 5 heures</span></div><em>8 €</em></div>
+      <div class="l"><div><b>Tarte fine aux pommes</b><span>caramel au beurre salé</span></div><em>9 €</em></div>
+    </div>
+    <div><h3>À boire</h3>
+      <div class="l"><div><b>Cidre brut fermier</b><span>75 cl</span></div><em>14 €</em></div>
+      <div class="l"><div><b>Muscadet Sèvre-et-Maine</b><span>verre / bouteille</span></div><em>5 / 24 €</em></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <div class="strip">
+    <div class="ph"><img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&q=70" alt="" onerror="this.remove()"></div>
+    <div class="ph"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=70" alt="" onerror="this.remove()"></div>
+    <div class="ph"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800&q=70" alt="" onerror="this.remove()"></div>
+    <div class="ph"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=70" alt="" onerror="this.remove()"></div>
+  </div>
+</div></section>
+
+<section class="sec" id="infos" style="padding-top:0"><div class="wrap">
+  <div class="info">
+    <div><h3>Horaires</h3><table>
+      <tr><td>Lundi</td><td>Fermé</td></tr><tr><td>Mardi – Jeudi</td><td>12h–14h · 19h–22h</td></tr><tr><td>Vendredi – Samedi</td><td>12h–14h · 19h–22h30</td></tr><tr><td>Dimanche</td><td>12h–14h30</td></tr></table></div>
+    <div><h3>Venir</h3><p>Sur les quais, face au port de plaisance. Parking du port à 2 minutes à pied.</p><p style="margin-top:14px"><a class="b" href="#" style="display:inline-block;font-size:.78rem">Itinéraire</a></p></div>
+    <div><h3>Bon à savoir</h3><p>Terrasse chauffée. Menu enfant. Chiens acceptés en terrasse. Carte des allergènes sur demande.</p></div>
+  </div>
+</div></section>
+
+<section class="sec" id="reserver"><div class="wrap">
+  <div class="res"><h2>Réserver une table</h2><p>Réponse immédiate, confirmation par SMS.</p>
+    <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Demande envoyée ✓'">
+      <input type="date" aria-label="Date"><select aria-label="Heure"><option>19:30</option><option>20:00</option><option>20:30</option><option>12:30</option></select>
+      <select aria-label="Personnes"><option>2 personnes</option><option>3 personnes</option><option>4 personnes</option><option>6 personnes</option></select><input type="tel" placeholder="Votre téléphone">
+      <button type="submit">Confirmer</button>
+    </form></div>
+</div></section>
+
+<footer>
+  <div class="soc"><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a><a href="#" aria-label="Avis Google"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg></a></div>
+  Maison Galet · Cherbourg-en-Cotentin · 02 00 00 00 00
+  <div class="fict">Exemple fictif réalisé par JLC Service pour démonstration. Aucune information réelle.</div>
+</footer>
+<script>
+addEventListener('message',e=>{if(e.data&&e.data.type==='dish'){const d=document.getElementById('dish'),p=document.getElementById('price');d.textContent=e.data.name||'…';p.textContent=e.data.price||'';d.style.color='#c9814f';setTimeout(()=>d.style.color='',400)}});
+</script>
+</body></html>

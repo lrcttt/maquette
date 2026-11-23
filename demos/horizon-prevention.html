@@ -1,0 +1,127 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Horizon Prévention Formation · Santé et sécurité au travail — exemple fictif</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<style>
+:root{--paper:#f4f1ea;--green:#1f4d3a;--green2:#2f7a5a;--ochre:#c99a3f;--ink:#1b2320;--mut:#5f6b66;--line:#dcd6c8;--serif:"Source Serif 4",Georgia,serif;--sans:"Source Sans 3",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--sans)}
+img{display:block;max-width:100%}a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:600;margin:0;line-height:1.08;letter-spacing:-.01em}
+.wrap{max-width:1140px;margin:auto;padding:0 20px}
+.ph{position:relative;background:linear-gradient(150deg,#cfd9c8,#5f8a73);overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.topbar{background:var(--green);color:#fff;font-size:.82rem;padding:6px 20px;display:flex;justify-content:space-between;gap:12px}
+.topbar span{opacity:.85}
+nav{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;position:sticky;top:0;z-index:10;background:rgba(244,241,234,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+nav .logo i{width:40px;height:40px;border-radius:8px;background:var(--green);display:grid;place-items:center}
+nav .logo svg{width:24px;height:24px}
+nav .logo b{display:block;font:600 1.1rem var(--serif);line-height:1}
+nav .logo small{display:block;color:var(--mut);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+nav .links{display:none;gap:22px;font-weight:600;font-size:.92rem}
+nav .links a{text-decoration:none;color:var(--mut)}
+nav .b{padding:.6em 1.1em;font-size:.88rem}
+@media(min-width:960px){nav .links{display:flex}}
+.b{font:700 .95rem var(--sans);text-decoration:none;padding:.9em 1.4em;border-radius:6px;background:var(--green);color:#fff;display:inline-block;transition:.25s}
+.b:hover{background:var(--green2)}
+.b.o{background:transparent;color:var(--green);border:1.5px solid var(--green)}
+.hero{display:grid;gap:30px;padding:50px 0 60px}
+@media(min-width:900px){.hero{grid-template-columns:1.05fr .95fr;align-items:center;gap:60px;padding:70px 0 80px}}
+.hero .k{font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ochre)}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.4rem);margin-top:12px}
+.hero p{color:var(--mut);margin-top:18px;font-size:1.1rem;max-width:52ch}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.hero .ph{aspect-ratio:5/4;border-radius:8px;box-shadow:0 30px 60px -30px rgba(27,35,32,.4)}
+.labels{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.labels span{border:1px solid var(--line);background:#fff;border-radius:6px;padding:.4em .8em;font-size:.82rem;font-weight:600;color:var(--mut)}
+.sec{padding:70px 0}
+.k2{font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ochre)}
+.h2{font-size:clamp(2rem,4.4vw,3.2rem);margin-top:10px;color:var(--green)}
+.form{display:grid;gap:14px;margin-top:30px}
+@media(min-width:760px){.form{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.form{grid-template-columns:repeat(3,1fr)}}
+.f{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px;display:grid;gap:8px;align-content:start;transition:.3s;text-decoration:none}
+.f:hover{border-color:var(--green2);transform:translateY(-3px)}
+.f small{color:var(--ochre);font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.72rem}
+.f b{font:600 1.3rem var(--serif);color:var(--green)}
+.f p{color:var(--mut);font-size:.94rem}
+.f .meta{display:flex;gap:14px;font-size:.82rem;color:var(--mut);margin-top:6px;padding-top:10px;border-top:1px solid var(--line)}
+.f .meta i{font-style:normal;font-weight:700;color:var(--ink)}
+.about{display:grid;gap:30px;align-items:center}
+@media(min-width:900px){.about{grid-template-columns:1fr 1fr}}
+.about .ph{aspect-ratio:4/3;border-radius:8px}
+.about blockquote{margin:0;font:500 1.4rem/1.4 var(--serif);color:var(--green);border-left:3px solid var(--ochre);padding-left:20px}
+.about p{color:var(--mut);margin-top:16px}
+.num{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px}
+.num div{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px}
+.num b{display:block;font:600 2rem var(--serif);color:var(--green)}
+.num span{font-size:.84rem;color:var(--mut)}
+.news{display:grid;gap:14px}
+@media(min-width:760px){.news{grid-template-columns:repeat(3,1fr)}}
+.news a{text-decoration:none;display:grid;gap:8px}
+.news .ph{aspect-ratio:16/10;border-radius:8px}
+.news small{color:var(--mut);font-size:.8rem}
+.news b{font:600 1.15rem var(--serif);color:var(--green)}
+.contact{background:var(--green);color:#fff;border-radius:10px;padding:40px 24px}
+@media(min-width:900px){.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:56px;align-items:center}}
+.contact h2{font-size:clamp(2rem,4.4vw,3rem)}
+.contact p{color:#c7d6cc;margin-top:12px}
+.contact form{display:grid;gap:10px;margin-top:20px}
+@media(min-width:900px){.contact form{margin:0}}
+.contact input,.contact select,.contact button{font:600 .95rem var(--sans);padding:.9em 1em;border-radius:6px;border:0;background:#fff;color:var(--ink)}
+.contact button{background:var(--ochre);color:var(--ink);cursor:pointer}
+footer{padding:36px 20px;color:var(--mut);font-size:.86rem;border-top:1px solid var(--line)}
+footer .wrap{display:grid;gap:18px}
+@media(min-width:760px){footer .wrap{grid-template-columns:1fr auto;align-items:center}}
+footer .soc{display:flex;gap:16px;font-weight:600}
+footer .soc a{text-decoration:none;color:var(--green)}
+.fict{margin-top:8px;font-size:.74rem;opacity:.7}
+</style><script>if(self!==top)document.documentElement.classList.add("emb")</script><style>.emb *,.emb *::before,.emb *::after{animation:none!important;transition:none!important}.emb{scroll-behavior:auto!important}</style></head><body>
+<div class="topbar"><span>Organisme de formation · Santé &amp; sécurité au travail</span><span>02 00 00 00 00</span></div>
+<nav><a class="logo" href="#"><i><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 3 4 7v5c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V7z"/><path d="m9 12 2 2 4-4"/></svg></i><span><b>Horizon Prévention</b><small>Formation</small></span></a><div class="links"><a href="#formations">Formations</a><a href="#cabinet">Le cabinet</a><a href="#actus">Actualités</a><a href="#contact">Contact</a></div><a class="b" href="#contact">Demander un devis</a></nav>
+
+<header class="hero wrap">
+  <div><div class="k">Formation intra-entreprise · Normandie</div>
+    <h1>Moins d’accidents, des équipes qui tiennent dans la durée.</h1>
+    <p>Gestes et postures, prévention des TMS, réveil musculaire, formation de référents. Des formateurs de terrain qui viennent dans vos ateliers, pas dans une salle.</p>
+    <div class="btns"><a class="b" href="#formations">Voir les formations</a><a class="b o" href="#contact">Être rappelé</a></div>
+    <div class="labels"><span>Intra-entreprise</span><span>Sur site</span><span>Attestation remise</span><span>Prise en charge OPCO possible</span></div></div>
+  <div class="ph"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=70" alt="" onerror="this.remove()"></div>
+</header>
+
+<section class="sec" id="formations" style="padding-top:0"><div class="wrap">
+  <div class="k2">Catalogue</div><h2 class="h2">Nos formations</h2>
+  <div class="form">
+    <a class="f" href="#"><small>Prévention</small><b>Gestes &amp; postures</b><p>Manutention manuelle, principes de sécurité physique, adaptation au poste.</p><div class="meta"><span><i>1 jour</i></span><span><i>12</i> pers. max</span></div></a>
+    <a class="f" href="#"><small>Prévention</small><b>Prévention des TMS</b><p>Comprendre, repérer et agir sur les troubles musculo-squelettiques.</p><div class="meta"><span><i>1 jour</i></span><span><i>10</i> pers. max</span></div></a>
+    <a class="f" href="#"><small>Terrain</small><b>Réveil musculaire</b><p>Mise en place d’une routine d’échauffement avant la prise de poste.</p><div class="meta"><span><i>½ journée</i></span><span><i>15</i> pers. max</span></div></a>
+    <a class="f" href="#"><small>Référents</small><b>Référent prévention</b><p>Former un salarié relais pour animer la prévention au quotidien.</p><div class="meta"><span><i>2 jours</i></span><span><i>8</i> pers. max</span></div></a>
+    <a class="f" href="#"><small>Bureau</small><b>Travail sur écran</b><p>Aménagement du poste, pauses actives, prévention des douleurs.</p><div class="meta"><span><i>½ journée</i></span><span><i>12</i> pers. max</span></div></a>
+    <a class="f" href="#"><small>Sur mesure</small><b>Diagnostic de poste</b><p>Observation en situation réelle et plan d’action remis à l’entreprise.</p><div class="meta"><span><i>sur devis</i></span></div></a>
+  </div>
+</div></section>
+
+<section class="sec" id="cabinet" style="padding-top:0"><div class="wrap"><div class="about">
+  <div class="ph"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200&q=70" alt="" onerror="this.remove()"></div>
+  <div><div class="k2">Le cabinet</div><h2 class="h2">Des formateurs qui connaissent l’atelier</h2>
+    <blockquote style="margin-top:18px">« On ne forme pas des salariés à des gestes qu’on n’a jamais faits. »</blockquote>
+    <p>Fondé par deux ergonomes de terrain, le cabinet intervient dans l’industrie, la logistique, le BTP et les collectivités. Chaque formation commence par une observation réelle de vos postes.</p>
+    <div class="num"><div><b>2</b><span>formateurs</span></div><div><b>6</b><span>formations</span></div><div><b>100 %</b><span>sur site</span></div></div></div>
+</div></div></section>
+
+<section class="sec" id="actus" style="padding-top:0"><div class="wrap">
+  <div class="k2">Actualités</div><h2 class="h2" style="margin-bottom:24px">En ce moment</h2>
+  <div class="news">
+    <a href="#"><div class="ph"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=70" alt="" onerror="this.remove()"></div><small>Prévention</small><b>Pourquoi le réveil musculaire change tout en logistique</b></a>
+    <a href="#"><div class="ph"><img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=70" alt="" onerror="this.remove()"></div><small>Réglementation</small><b>Document unique : ce qui change pour les PME</b></a>
+    <a href="#"><div class="ph"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=70" alt="" onerror="this.remove()"></div><small>Bureau</small><b>Télétravail et douleurs : 5 réglages à faire ce soir</b></a>
+  </div>
+</div></section>
+
+<section class="sec" id="contact" style="padding-top:0"><div class="wrap"><div class="contact">
+  <div><h2>Parlons de vos postes de travail</h2><p>Un échange de 20 minutes pour cibler la formation utile. Devis sous 48 h, dossier OPCO préparé avec vous.</p></div>
+  <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Demande envoyée ✓'"><input placeholder="Entreprise"><input placeholder="Nom et fonction"><input type="email" placeholder="E-mail"><select><option>Gestes &amp; postures</option><option>Prévention des TMS</option><option>Réveil musculaire</option><option>Référent prévention</option><option>Autre</option></select><button>Être rappelé</button></form>
+</div></div></section>
+
+<footer><div class="wrap"><div>Horizon Prévention Formation · Normandie · 02 00 00 00 00<div class="fict">Exemple fictif réalisé par JLC Service pour démonstration. Aucune information réelle.</div></div><div class="soc"><a href="#">LinkedIn</a><a href="#">Facebook</a></div></div></footer>
+</body></html>

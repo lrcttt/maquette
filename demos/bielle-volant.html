@@ -1,0 +1,115 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Garage Bielle &amp; Volant · Entretien toutes marques — exemple fictif</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{--g:#15171a;--g2:#1f2227;--g3:#2a2e34;--y:#ffc62b;--fg:#f2f2f0;--mut:#9aa0a8;--cond:"Barlow Condensed",Impact,sans-serif;--sans:"Barlow",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--g);color:var(--fg);font:400 16px/1.55 var(--sans)}
+img{display:block;max-width:100%}a{color:inherit}
+h1,h2,h3{font-family:var(--cond);font-weight:800;margin:0;line-height:.92;text-transform:uppercase;letter-spacing:-.01em}
+.wrap{max-width:1120px;margin:auto;padding:0 20px}
+.ph{position:relative;background:linear-gradient(140deg,#3a3f47,#15171a);overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;filter:saturate(.85)}
+nav{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:rgba(21,23,26,.9);border-bottom:3px solid var(--y)}
+nav .logo{font:800 1.4rem var(--cond);text-transform:uppercase;text-decoration:none;display:flex;align-items:center;gap:10px}
+nav .logo i{width:30px;height:30px;background:var(--y);color:var(--g);display:grid;place-items:center;font-style:normal;clip-path:polygon(0 0,100% 0,100% 70%,70% 100%,0 100%)}
+nav .links{display:none;gap:22px;font:600 .9rem var(--sans);text-transform:uppercase;letter-spacing:.06em}
+nav .links a{text-decoration:none;color:var(--mut)}
+nav .call{font:800 .95rem var(--cond);text-transform:uppercase;letter-spacing:.06em;text-decoration:none;background:var(--y);color:var(--g);padding:.6em 1.1em}
+@media(min-width:900px){nav .links{display:flex}}
+.hero{position:relative;min-height:80vh;display:grid;align-items:center;overflow:hidden}
+.hero .ph{position:absolute;inset:0}
+.hero .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(21,23,26,.95) 30%,rgba(21,23,26,.4))}
+.hero .wrap{position:relative;padding:90px 20px 60px}
+.hero .k{display:inline-block;background:var(--y);color:var(--g);font:800 .85rem var(--cond);text-transform:uppercase;letter-spacing:.1em;padding:.35em .8em;margin-bottom:18px}
+.hero h1{font-size:clamp(3.6rem,10vw,8rem)}
+.hero h1 span{color:var(--y)}
+.hero p{max-width:48ch;color:var(--mut);margin-top:18px;font-size:1.05rem}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.b{font:800 1rem var(--cond);text-transform:uppercase;letter-spacing:.08em;text-decoration:none;padding:.9em 1.5em;background:var(--y);color:var(--g);clip-path:polygon(0 0,100% 0,100% 70%,92% 100%,0 100%)}
+.b.o{background:transparent;color:var(--fg);box-shadow:inset 0 0 0 2px var(--fg);clip-path:none}
+.stripe{background:repeating-linear-gradient(135deg,var(--y) 0 20px,var(--g) 20px 40px);height:10px}
+.sec{padding:70px 0}
+.k2{font:800 .85rem var(--cond);text-transform:uppercase;letter-spacing:.14em;color:var(--y)}
+.h2{font-size:clamp(2.6rem,6vw,4.6rem);margin-top:6px}
+.svcs{display:grid;gap:3px;margin-top:30px;background:var(--g3)}
+@media(min-width:720px){.svcs{grid-template-columns:repeat(3,1fr)}}
+.svcs div{background:var(--g2);padding:26px 22px;position:relative;transition:background .3s}
+.svcs div:hover{background:var(--g3)}
+.svcs div::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--y);transform:scaleY(0);transform-origin:top;transition:.3s}
+.svcs div:hover::before{transform:none}
+.svcs b{display:block;font:800 1.5rem var(--cond);text-transform:uppercase}
+.svcs span{display:block;color:var(--mut);margin-top:6px;font-size:.92rem}
+.svcs em{display:inline-block;font-style:normal;margin-top:12px;font:600 .85rem var(--sans);color:var(--y)}
+.why{display:grid;gap:30px;align-items:center}
+@media(min-width:860px){.why{grid-template-columns:1fr 1fr}}
+.why .ph{aspect-ratio:4/3;clip-path:polygon(0 0,100% 0,100% 88%,88% 100%,0 100%)}
+.why ul{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:14px}
+.why li{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start}
+.why li i{width:34px;height:34px;background:var(--y);color:var(--g);display:grid;place-items:center;font:800 1rem var(--cond)}
+.why li b{display:block;font:600 1.05rem var(--sans)}.why li span{color:var(--mut);font-size:.92rem}
+.rdv{background:var(--y);color:var(--g);padding:50px 24px}
+.rdv .wrap{display:grid;gap:24px}
+@media(min-width:860px){.rdv .wrap{grid-template-columns:1fr 1fr;align-items:center}}
+.rdv h2{font-size:clamp(2.4rem,6vw,4.4rem)}
+.rdv p{margin-top:10px;font-weight:500}
+.rdv form{display:grid;gap:8px;grid-template-columns:1fr 1fr}
+.rdv input,.rdv select,.rdv button{font:500 .95rem var(--sans);padding:.9em 1em;border:2px solid var(--g);background:#fff;color:var(--g)}
+.rdv button{grid-column:1/-1;background:var(--g);color:var(--y);font:800 1.1rem var(--cond);text-transform:uppercase;letter-spacing:.08em;cursor:pointer}
+.info{display:grid;gap:18px}
+@media(min-width:800px){.info{grid-template-columns:1fr 1fr}}
+.info div{background:var(--g2);padding:26px}
+.info h3{font-size:1.6rem;margin-bottom:10px;color:var(--y)}
+.info table{width:100%;border-collapse:collapse}.info td{padding:6px 0;color:var(--mut)}.info td:last-child{text-align:right;color:var(--fg)}
+footer{padding:36px 20px;text-align:center;color:var(--mut);font-size:.85rem;border-top:1px solid var(--g3)}
+footer .soc{display:flex;justify-content:center;gap:10px;margin-bottom:14px}
+footer .soc a{width:42px;height:42px;background:var(--g2);display:grid;place-items:center;color:var(--y)}
+footer .soc svg{width:18px;height:18px}
+.fict{margin-top:12px;font-size:.74rem;opacity:.6}
+</style><script>if(self!==top)document.documentElement.classList.add("emb")</script><style>.emb *,.emb *::before,.emb *::after{animation:none!important;transition:none!important}.emb{scroll-behavior:auto!important}</style></head><body>
+<nav><a class="logo" href="#"><i>BV</i>Bielle &amp; Volant</a><div class="links"><a href="#services">Services</a><a href="#pourquoi">Le garage</a><a href="#infos">Horaires</a></div><a class="call" href="#rdv">Prendre RDV</a></nav>
+
+<header class="hero">
+  <div class="ph"><img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1600&q=70" alt="" onerror="this.remove()"></div>
+  <div class="wrap"><span class="k">Garage indépendant · toutes marques</span>
+    <h1>Votre voiture<br><span>entre de bonnes mains.</span></h1>
+    <p>Entretien, révision, pneus, diagnostic électronique et contrôle technique préparé. Devis clair avant toute intervention, pas de surprise à la facture.</p>
+    <div class="btns"><a class="b" href="#rdv">Prendre rendez-vous</a><a class="b o" href="#services">Voir les tarifs</a></div></div>
+</header>
+<div class="stripe"></div>
+
+<section class="sec" id="services"><div class="wrap">
+  <div class="k2">Services &amp; tarifs</div><h2 class="h2">Ce qu’on fait, et combien</h2>
+  <div class="svcs">
+    <div><b>Révision complète</b><span>Vidange, filtres, niveaux, 40 points de contrôle</span><em>à partir de 149 €</em></div>
+    <div><b>Pneus</b><span>Montage, équilibrage, géométrie. Stockage saisonnier.</span><em>montage dès 15 € / pneu</em></div>
+    <div><b>Freinage</b><span>Disques, plaquettes, purge liquide</span><em>sur devis</em></div>
+    <div><b>Diagnostic</b><span>Valise multimarque, lecture des défauts</span><em>49 €, déduits si réparation</em></div>
+    <div><b>Pré-contrôle technique</b><span>On vérifie tout avant, vous passez du premier coup</span><em>39 €</em></div>
+    <div><b>Climatisation</b><span>Recharge, détection de fuite, désinfection</span><em>à partir de 79 €</em></div>
+  </div>
+</div></section>
+
+<section class="sec" id="pourquoi" style="padding-top:0"><div class="wrap">
+  <div class="why">
+    <div class="ph"><img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1200&q=70" alt="" onerror="this.remove()"></div>
+    <div><div class="k2">Le garage</div><h2 class="h2" style="font-size:clamp(2.2rem,5vw,3.6rem)">Deux mécanos, un atelier, zéro blabla</h2>
+      <ul><li><i>1</i><div><b>Devis avant, toujours</b><span>Vous validez par SMS, on commence après.</span></div></li>
+      <li><i>2</i><div><b>Pièces d’origine ou équivalent</b><span>Vous choisissez, on vous explique la différence.</span></div></li>
+      <li><i>3</i><div><b>Véhicule de courtoisie</b><span>Sur réservation, pour les interventions d’une journée.</span></div></li></ul></div>
+  </div>
+</div></section>
+
+<section class="rdv" id="rdv"><div class="wrap">
+  <div><h2>Prendre rendez-vous</h2><p>Dites-nous ce qu’il se passe, on vous rappelle dans la journée avec un créneau.</p></div>
+  <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Demande envoyée ✓'"><input placeholder="Nom"><input type="tel" placeholder="Téléphone"><input placeholder="Immatriculation"><select><option>Révision</option><option>Pneus</option><option>Freins</option><option>Voyant allumé</option><option>Autre</option></select><button>Envoyer</button></form>
+</div></section>
+
+<section class="sec" id="infos"><div class="wrap"><div class="info">
+  <div><h3>Horaires</h3><table><tr><td>Lundi – Vendredi</td><td>8h – 12h · 14h – 18h30</td></tr><tr><td>Samedi</td><td>8h – 12h</td></tr><tr><td>Dimanche</td><td>Fermé</td></tr></table></div>
+  <div><h3>Venir à l’atelier</h3><p style="color:var(--mut)">Zone artisanale, accès facile, parking devant l’atelier. Dépôt des clés possible en boîte sécurisée dès 7 h 30.</p><p style="margin-top:16px"><a class="b o" href="#" style="display:inline-block;font-size:.9rem">Itinéraire</a></p></div>
+</div></div></section>
+
+<footer><div class="soc"><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a><a href="#" aria-label="Avis Google"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg></a></div>
+Garage Bielle &amp; Volant · Cotentin · 02 00 00 00 00<div class="fict">Exemple fictif réalisé par JLC Service pour démonstration. Aucune information réelle.</div></footer>
+</body></html>
