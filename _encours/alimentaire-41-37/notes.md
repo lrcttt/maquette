@@ -14,3 +14,7 @@
 41 : La Feuille d'Argent 4,7(286) ; L'Art de la Boucherie 4,7(110) ; Boucherie Reverse 4,6(77) ; Avezard SARL 4,8(42) ; Van Caneghem 4,8(40).
 37 : Maison Vavasseur 5,0(48) ; La Boucherie du Coin 4,9(111) ; Boucherie Colomb 4,8(35) ; Charcuterie Goulay 4,6(148) ; Sarl F. Bignon Jérôme 4,9(41) ; Boucherie des Gués de Veigné 4,9(43) ; Maison Delaunois 4,8(92) ; Boucherie Gallais 4,6(434).
 Fromageries 41/37 : pas encore cherchées.
+
+## Session 23/11 soir (agent v8)
+- Boucherie Reversé (Villiers-sur-Loir, 41) : FAIT -> maquette scu80a-boucherie-reverse. E-mail yannick.reverse@orange.fr (publication FB de la page, photo 1442782351183468, ~11 mois). FB 100063551503520.
+- Avezard SARL 4,8 (42) et Van Caneghem 4,8 (40) : NON vérifiés (temps écoulé).
