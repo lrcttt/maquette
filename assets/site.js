@@ -60,7 +60,7 @@
   /* mise à l'échelle des iframes dans les écrans d'ordinateur et les cartes */
   const fitScr = () => {
     $$('.laptop .lid .scr').forEach(s => s.closest('.laptop').style.setProperty('--ls', s.clientWidth / 1280));
-    $$('.work .prev').forEach(p => p.closest('.work').style.setProperty('--ws', p.clientWidth / (p.closest('.work.big') && innerWidth > 620 ? 1280 : 390)));
+    $$('.work .prev').forEach(p => p.closest('.work').style.setProperty('--ws', p.clientWidth / ((p.closest('.work.big') || innerWidth <= 620) ? 1280 : 390)));
   };
   fitScr(); addEventListener('resize', fitScr); addEventListener('load', fitScr);
 

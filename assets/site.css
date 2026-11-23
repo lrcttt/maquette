@@ -464,3 +464,13 @@ footer{border-top:1px solid var(--line);padding-block:48px 28px;margin-top:40px;
 
 .orb{width:100%}
 .vals .ico{display:grid!important;grid-template-columns:none!important;place-items:center;width:46px;height:46px;gap:0}
+
+/* ===== v2.3 (23/11) : vignettes de réalisations lisibles sur téléphone ===== */
+@media(max-width:620px){
+  .work,.work.big{aspect-ratio:auto;min-height:0;display:flex;flex-direction:column}
+  .work .prev{position:relative;inset:auto;aspect-ratio:16/10;border-bottom:1px solid var(--line)}
+  .work .prev::after{display:none}
+  .work .prev iframe,.work.big .prev iframe{width:1280px;height:800px}
+  .work .info{position:static;padding:18px 20px 20px}
+  .work .arrow{display:none}
+}
