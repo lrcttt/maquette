@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 # Les maquettes portent chacune une balise noindex.
+Sitemap: https://jlc-service.fr/sitemap.xml
